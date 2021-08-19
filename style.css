@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+--Verydarkblue: hsl(233, 47%, 7%);
+--Darkdesaturatedblue: hsl(244, 38%, 16%);
+--Softviolet:hsl(277, 64%, 61%);
+--White: hsl(0, 0%, 100%);
+--Slightlytransparentwhite: hsla(0, 0%, 100%, 0.75);
+--Slightlytransparentprpl: hsla(0, 0%, 100%, 0.6);
+}
+body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--Verydarkblue);
+    
+}
+.main{
+    width: 22.4356rem;
+    height: 55rem;
+    margin: 5rem 1.22em 5rem 1.22rem;
+}
+
+.image{
+    width: 100%;
+    height: 28%; 
+}
+.mblimg{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(70%) brightness(60%) sepia(40%) hue-rotate(-132deg) saturate(700%) contrast(0.7);
+    border-radius: 0.4rem 0.4rem 0 0;
+}
+.desimg{
+    display: none;
+}
+
+.txt{
+    width: 100%;
+    height: 58%;
+    background-color:var(--Darkdesaturatedblue);
+    border-radius:0 0 0.4rem 0.4rem;
+    
+}
+.maintxt{
+    width: 100%;
+    height: 50%;
+    padding: 2.4rem 1rem 2rem 1rem;  
+}
+
+.maintxt h2{
+    font-family: 'Inter', sans-serif;
+    line-height: 1.1;
+    color: var(--White);
+    font-size: 1.78rem;
+}
+span{
+    color: var(--Softviolet);
+}
+.maintxt p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 0.929rem;
+    line-height: 1.6;
+    margin-top: 1.6rem;
+    color: var(--Slightlytransparentprpl);
+}
+.social{
+    width: 100%;
+    height: 50%;
+    padding: 0rem 1rem 0 1rem;  
+    
+}
+.social h1{
+    font-family: 'Inter', sans-serif;
+    
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: var(--White);
+}
+.social p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 500;
+    font-size: 0.7rem;
+    margin-bottom: 2.2em;
+    margin-top: 0.4rem;
+    color: var(--Slightlytransparentprpl);
+}
+.fh{
+    margin-top: 2rem;
+}
+.attribution{
+    margin-top: 0.6rem;
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--Slightlytransparentwhite);
+}
+.attribution a{
+    text-decoration: none;
+}
+.d{
+    display: none;
+}
+@media screen and (min-width:780px) {
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main{
+        height: 26.4356rem;
+        width: 69rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 0.6fr;
+        grid-template-areas: "word photo"
+        "link link";
+        overflow:visible;
+        
+    }
+    .image{
+        box-sizing: border-box;
+        height: 100%;
+        grid-area: photo;
+    }
+    .txt{
+        height: 100%;
+        grid-area: word;
+        width: 100%;
+        border-radius:0.4rem 0 0 0.4rem;
+        
+        
+    }
+    .attribution{
+        grid-area: link;
+    }
+    .mblimg{
+        display:none;
+    }
+    .desimg{
+        display: block;
+        width: 100%;
+        height: 100%;
+        filter: grayscale(70%) brightness(60%) sepia(40%) hue-rotate(-132deg) saturate(700%) contrast(0.7);
+        border-radius:0 0.4rem 0.4rem 0;
+    }
+    .maintxt{
+        height: 65%;
+        text-align: left;
+        padding-left: 5.4rem;
+        padding-bottom: 0;
+        padding-top: 4.5rem;
+    }
+    .social{
+        display: flex;
+        height: 35%;
+        justify-content: center;
+        align-items: center;
+        padding-right: 5rem;
+    }
+    .social div{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .fh{
+        margin: 0;
+    }
+    .maintxt h2{
+        font-family: 'Inter', sans-serif;
+        line-height: 1.1;
+        color: var(--White);
+        font-size: 2.1rem;
+        letter-spacing: 1px;
+    }
+    .maintxt p{
+        margin-top: 2rem;
+    }
+
+    .m{
+        display: none;
+    }
+    .d{
+        display: block;
+    }
+    
+
+
+    
+}
+
+
